@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-image">
+        <div class="overlay"></div>
+    </div>
+
+    <main>
+        <section>
+            <div class="desc">
+                <h2>Learn to code by watching others</h2>
+                <p>
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="right">
+                <section>
+                    <div class="regform-header">
+                        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="regform">
+                        <form action="#" id="form">
+                            <div class="reg">
+                                <input type="text" placeholder="First Name" class="inputfield" id="fname" required>
+                                <img src="./images/icon-error.svg" alt="#" class="error-icon"> <span
+                                    class="error-text">First name cannot be empty</span>
+                            </div>
+                            <div class="reg">
+                                <input type="text" placeholder="Last Name" class="inputfield" id="lname" required>
+                                <img src="./images/icon-error.svg" alt="#" class="error-icon"> <span
+                                    class="error-text">Last name cannot be empty</span>
+                            </div>
+                            <div class="reg">
+                                <input type="email" placeholder="Email Address" class="inputfield" id="email" required>
+                                <img src="./images/icon-error.svg" alt="#" class="error-icon"> <span
+                                    class="error-text">Looks like this is not an email</span>
+                            </div>
+                            <div class="reg">
+                                <input type="text" placeholder="Password" class="inputfield" id="pass" required>
+                                <img src="./images/icon-error.svg" alt="#" class="error-icon"> <span
+                                    class="error-text">Password cannot be empty</span>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="submitbtn">CLAIM YOUR FREE TRIAL</button>
+                            <h5>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></h5>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

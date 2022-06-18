@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --red: hsl(0, 100%, 74%, 1);
+    --green: hsl(154, 59%, 51%);
+    --white: #fff;
+    /* ### Accent */
+    --blue: hsl(248, 32%, 49%);
+    /* ### Neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(243, 40%, 91%);
+}
+
+html {
+    min-width: 375px;
+    max-width: 1440px;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    background-color: var(--red);
+    background-image: url(./images/bg-intro-mobile.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red);
+    font-family: inherit;
+    font-weight: 600;
+}
+
+main {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem 3rem;
+}
+
+main .desc {
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+main .desc h2 {
+    font-weight: 700;
+}
+
+main .desc p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5rem;
+    padding: 1rem;
+}
+
+.regform-header {
+    text-align:center;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 15px 50px;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.4rem;
+    box-shadow: 0 7px 1px 0 rgba(88, 61, 61, 0.3);
+}
+
+.regform-header span {
+    font-weight: 600;
+}
+
+.regform-header p {
+    font-weight: 400;
+}
+
+.regform {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 7px 1px 0 rgba(90, 59, 59, 0.3);
+}
+
+.regform form {
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.regform .inputfield {
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid var(--grayish-blue);
+    outline: none;
+}
+
+.regform .invalid{
+    border: 2px solid var(--red);
+}
+
+.regform .inputfield:focus {
+    border: 1px solid var(--blue);
+}
+
+.regform .reg {
+    position: relative;
+}
+
+.regform .reg .error-icon {
+    position: absolute;
+    width: 20px;
+    right: 8%;
+    top: 28%;
+    display:none;
+}
+
+.regform .reg .visible{
+    display: block;
+}
+
+.regform .reg .error-text {
+    margin-top: 8px;
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 500;
+    display:none;
+    text-align: right;
+    font-style: italic;
+}
+
+.regform .reg .visible{
+    display:block;
+    
+}
+
+.visible{
+    display: block;
+}
+
+.regform button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 10px;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    color: var(--white);
+    font-family: inherit;
+    font-weight: 500;
+    box-shadow: 0 4px 1px 0 hsl(154, 46%, 49%);
+}
+
+.regform button:hover {
+    cursor: pointer;
+    background-color: hsl(154, 59%, 51%, 0.7);
+}
+
+.regform h5 {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+
+/* ===========media queries=========== */
+@media (min-width:768px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-color: var(--red);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width:100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        margin:auto;
+        padding: 1rem;
+    }
+  
+    main .desc{
+        padding: 2rem;
+        width:400px;
+        text-align:left;
+    }
+
+    main .desc h2{
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    main .desc p{
+        font-size: 14px;
+        padding:0;
+    }
+}
+
+@media (min-width:992px) {
+    main{
+        padding: 2rem;
+        margin:auto auto auto auto;
+        height: 600px;
+    }
+
+    main .desc{
+        padding: 2rem;
+        width:500px;
+        text-align:left;
+        margin-top: 40px;
+    }
+
+    main .desc h2{
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    main .desc p{
+        font-size: 14px;
+        padding:0;
+    }
+
+    .right{
+        width:500px;
+        height: 500px;
+    }
+}
